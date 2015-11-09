@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">FIND Message</string>
+    <string name="action_group">Users</string>
+    <string name="sendButton">Send</string>
+    <string name="editTextHint">Type message</string>
+    <string name="dialog_title">Start Service</string>
+    <string name="dialog_message">FIND Message requires the service to be running. Do you wish to start it now?</string>
+    <string name="user_icon_description">user icon</string>
+
+    <!-- Message status -->
+    <string name="message_sent">sent</string>
+    <string name="message_created">created</string>
+    <string name="message_rec_vic">receivedVictim</string>
+    <string name="message_rec_res">receivedRescuer</string>
+    <string name="message_rec_cc">receivedControlCentre</string>
+
+    <!-- Instructive strings -->
+    <string name="requires_installation">This application requires installation of FIND Service</string>
+ 	<string name="message_repeated">Please don\'t send repeated messages</string>
+    <string name="message_empty">Please don\'t send empty messages</string>
+    
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- The main content view -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!--
+             <ProgressBar
+            android:id="@+id/retrievingDataSpinner"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+        -->
+
+        <ListView
+            android:id="@+id/messagesListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/form"
+            android:layout_alignParentTop="true"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/form"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editText"
+                style="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:drawable/edit_text"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/editTextHint"
+                android:inputType="textCapSentences" />
+
+            <!--
+        <View
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/sendButton"
+            android:background="@color/gray" />
+        
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@android:drawable/btn_default"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/sendButton"
+            android:textColor="@color/background_material_dark" />
+            -->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- The navigation drawer -->
+
+    <ListView
+        android:id="@+id/users_drawer"
+        android:layout_width="240dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="end"
+        android:background="#111"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        android:transcriptMode="alwaysScroll" />
+
+</android.support.v4.widget.DrawerLayout>
